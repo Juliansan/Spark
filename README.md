@@ -66,3 +66,10 @@ docker exec -it spark-master /opt/bitnami/spark/bin/spark-submit \
   --master spark://spark-master:7077 \
   /opt/spark-apps/my_spark_app.py
 ```
+### 3. (run_spark_job.sh)
+You can run also any spark job with the script `run_spark_job.sh`
+```sh
+chmod +x run_spark_job.sh
+
+./run_spark_job.sh <name of the file> # does not need to contain full path, just the jar or script variable
+```
